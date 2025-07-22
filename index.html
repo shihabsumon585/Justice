@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Justice</title>
+
+    <style>
+    .custom-banner {
+    background-image: url('/images/banner.png');
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    height: 550px;
+    }
+    </style>
+
+
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- style.css file Link -->
+     <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome Icon CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    
+    <header class="max-w-6xl mx-auto mt-3">
+        <nav class="flex items-center justify-between">
+            <img src="images/logo2.png" alt="">
+            <div>
+                <ul class="flex gap-4.5">
+                    <li><a href="#" class="text-gray-500 py-1 px-3.5 hover:bg-gray-200 rounded-[10px]">Home</a></li>
+                    <li><a href="#" class="text-gray-500 py-1 px-3.5 hover:bg-gray-200 rounded-[10px]">Services <i class="fa-solid fa-caret-right"></i></a></li>
+                    <li><a href="#" class="text-gray-500 py-1 px-3.5 hover:bg-gray-200 rounded-[10px]">Cases <i class="fa-solid fa-caret-right"></i></a></li>
+                    <li><a href="#" class="text-gray-500 py-1 px-3.5 hover:bg-gray-200 rounded-[10px]">Blog <i class="fa-solid fa-caret-right"></i></a></li>
+                    <li><a href="#" class="text-gray-500 py-1 px-3.5 hover:bg-gray-200 rounded-[10px]">Contact Us <i class="fa-solid fa-caret-right"></i></a></li>
+                </ul>
+            </div>
+            <button class="w-[220px] h-16 bg-[#B68C5A] rounded-xl text-white">Free Consultation</button>
+        </nav>
+        <section class="custom-banner mt-15 rounded-2xl">
+            <h1 class="text-white text-center font-extrabold text-7xl pt-12">We Provide Effective <br> Legal Solutions</h1>
+            <p class="text-white text-center mt-15">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+            <div class="mt-15 flex gap-5 flex justify-center">
+                <div class="flex justify-center">
+                    <input type="search" placeholder="search your devices" class="ml-2.5 rounded-xl p-2.5 h-14 w-[500px] bg-white text-black">
+                </div>
+                <button class="text-center bg-[#B68C5A] py-3 px-6 rounded-xl text-white text-xl font-semibold">Search</button>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
